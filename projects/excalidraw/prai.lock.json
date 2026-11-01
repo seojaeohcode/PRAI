@@ -1,0 +1,170 @@
+{
+ "music": {
+  "file": "music/getting-it-done.mp3",
+  "bpm": 135,
+  "offset": 0.02,
+  "downbeat": 3,
+  "clarity": 8.16,
+  "barConfidence": 1.31,
+  "energy": [
+   0.88,
+   0.88,
+   0.89,
+   0.87,
+   0.86,
+   0.89,
+   0.88,
+   0.84,
+   0.88,
+   0.82,
+   0.87,
+   0.81,
+   0.87,
+   0.85,
+   0.97,
+   0.87,
+   0.87,
+   0.82,
+   0.89,
+   0.82,
+   0.88,
+   0.82,
+   0.99,
+   0.74,
+   0.64,
+   0.74,
+   0.7,
+   0.72,
+   0.65,
+   0.72,
+   0.92,
+   0.96,
+   0.9,
+   0.95,
+   0.9,
+   0.92,
+   0.91,
+   0.9,
+   1,
+   0.84,
+   0.89,
+   0.86,
+   0.84,
+   0.81,
+   0.89,
+   0.88,
+   0.97,
+   0.84,
+   0.9,
+   0.89,
+   0.89,
+   0.84,
+   0.92,
+   0.89,
+   0.92,
+   0.68,
+   0.49,
+   0.49,
+   0.33,
+   0.43,
+   0.5,
+   0.56,
+   0.86,
+   0.87,
+   0.89,
+   0.88
+  ],
+  "duration": 120,
+  "hash": "fad6ab792802"
+ },
+ "voice": {
+  "intro-1": {
+   "file": "471e679b391c.mp3",
+   "text": "A whiteboard that lives in your browser.",
+   "seconds": 2.4,
+   "cues": [
+    {
+     "start": 0.1,
+     "end": 2.434,
+     "text": "A whiteboard that lives in your browser."
+    }
+   ],
+   "hash": "471e679b391c"
+  },
+  "draw-1": {
+   "file": "fe43d43bbb89.mp3",
+   "text": "Press R, drag a box, and type its name.",
+   "seconds": 3.43,
+   "cues": [
+    {
+     "start": 0.1,
+     "end": 3.484,
+     "text": "Press R, drag a box, and type its name."
+    }
+   ],
+   "hash": "fe43d43bbb89"
+  },
+  "flow-1": {
+   "file": "fab6185fc02c.mp3",
+   "text": "Add arrows, and a whole flow takes seconds.",
+   "seconds": 3.1,
+   "cues": [
+    {
+     "start": 0.1,
+     "end": 3.13,
+     "text": "Add arrows, and a whole flow takes seconds."
+    }
+   ],
+   "hash": "fab6185fc02c"
+  },
+  "style-1": {
+   "file": "ea7c6cc4a3f0.mp3",
+   "text": "Select everything and restyle it in one go.",
+   "seconds": 3.22,
+   "cues": [
+    {
+     "start": 0.1,
+     "end": 3.26,
+     "text": "Select everything and restyle it in one go."
+    }
+   ],
+   "hash": "ea7c6cc4a3f0"
+  },
+  "export-1": {
+   "file": "188f066528ca.mp3",
+   "text": "Export a PNG or an SVG, or copy it straight to the clipboard.",
+   "seconds": 4.51,
+   "cues": [
+    {
+     "start": 0.1,
+     "end": 4.557,
+     "text": "Export a PNG or an SVG, or copy it straight to the clipboard."
+    }
+   ],
+   "hash": "188f066528ca"
+  },
+  "outro-1": {
+   "file": "1fba122dfd02.mp3",
+   "text": "Sketch. Share. Ship.",
+   "seconds": 2.83,
+   "cues": [
+    {
+     "start": 0.1,
+     "end": 1.161,
+     "text": "Sketch."
+    },
+    {
+     "start": 1.111,
+     "end": 1.948,
+     "text": "Share."
+    },
+    {
+     "start": 1.948,
+     "end": 2.8209999999999997,
+     "text": "Ship."
+    }
+   ],
+   "hash": "1fba122dfd02"
+  }
+ }
+}

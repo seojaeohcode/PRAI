@@ -1,0 +1,333 @@
+{
+  "$schema": "../../schema/prai.schema.json",
+  "video": {
+    "title": "PRAI — Preview AI",
+    "lang": "en"
+  },
+  "theme": {
+    "brand": "#1F3BFF",
+    "brand2": "#8A5CFF",
+    "accent": "#FF5A4E",
+    "ink": "#0E1726",
+    "ink2": "#46536B",
+    "ground": "#F2F5FA",
+    "logo": "logo.svg"
+  },
+  "music": {
+    "src": "music/hyperfun.mp3",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hyperfun.mp3",
+    "credit": "\"Hyperfun\" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0"
+  },
+  "voice": {
+    "provider": "edge",
+    "voice": "en-US-AndrewNeural",
+    "rate": "+5%"
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "type": "motion",
+      "purpose": "brand",
+      "bg": "brand",
+      "intensity": "high",
+      "beats": 24,
+      "say": [
+        {
+          "text": "Your product deserves a launch video, made from one JSON file.",
+          "at": 1
+        },
+        {
+          "text": "This is PRAI.",
+          "at": 13
+        }
+      ],
+      "cues": [
+        {
+          "block": "orbs",
+          "at": 0,
+          "until": 12
+        },
+        {
+          "block": "kicker",
+          "at": 0,
+          "text": "open source · Claude Code × Codex",
+          "until": 6,
+          "y": 300
+        },
+        {
+          "block": "title",
+          "at": 1,
+          "text": "Your product|deserves a|launch video.",
+          "step": 1,
+          "size": 128,
+          "until": 6
+        },
+        {
+          "block": "title",
+          "at": 6,
+          "text": "Made from|one JSON|file.",
+          "step": 1,
+          "size": 128,
+          "until": 12
+        },
+        {
+          "block": "wipe",
+          "at": 12,
+          "to": "light"
+        },
+        {
+          "block": "logo",
+          "at": 12,
+          "width": 220,
+          "y": 360,
+          "until": 21
+        },
+        {
+          "block": "title",
+          "at": 13,
+          "text": "PRAI",
+          "size": 170,
+          "enter": "pop",
+          "y": 680,
+          "until": 21
+        },
+        {
+          "block": "tagline",
+          "at": 14,
+          "text": "Preview AI — beat-synced demo videos",
+          "size": 44,
+          "y": 800,
+          "until": 21
+        },
+        {
+          "block": "screen",
+          "at": 22,
+          "shot": "spec"
+        }
+      ]
+    },
+    {
+      "id": "spec",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "spec",
+      "device": "browser",
+      "url": "projects/excalidraw/prai.json",
+      "say": "Describe the video in one file. Every time is a beat, so the edit follows the music.",
+      "headline": "One JSON file. Times in beats.",
+      "camera": [
+        {
+          "at": 2,
+          "to": "cues",
+          "pad": 30
+        }
+      ],
+      "marks": [
+        {
+          "at": 3,
+          "on": "cues",
+          "label": "\"at\": a beat, not a frame",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "pipeline",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "terminal",
+      "url": "terminal",
+      "say": "PRAI shoots your real screens, measures the music, and records the narration.",
+      "headline": "Capture. Measure. Narrate.",
+      "camera": [
+        {
+          "at": 1,
+          "to": "beat",
+          "pad": 60
+        },
+        {
+          "at": 5,
+          "to": [
+            "voice",
+            "check"
+          ],
+          "pad": 30
+        }
+      ],
+      "marks": [
+        {
+          "at": 2,
+          "until": 5,
+          "on": "beat",
+          "label": "135 BPM, first beat 0.02 s",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "plan",
+      "url": "out/excalidraw/plan.md",
+      "say": "It plans every scene on the beat grid.",
+      "headline": "Every cue lands on a beat",
+      "camera": [
+        {
+          "at": 1,
+          "to": "table",
+          "pad": 30
+        }
+      ],
+      "marks": [
+        {
+          "at": 3,
+          "on": "hits",
+          "style": "spotlight",
+          "label": "bar 1 · bar 2 · bar 5",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "studio",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "studio",
+      "device": "none",
+      "say": "Preview it live, then render and master with one command.",
+      "headline": "Preview in Remotion Studio",
+      "camera": [
+        {
+          "at": 1,
+          "to": "preview",
+          "pad": 20
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "review",
+      "url": "projects/excalidraw/reviews/ledger.md",
+      "say": "Codex reviews each round. Claude Code decides, and writes down why.",
+      "headline": "Codex reviews. Claude Code decides.",
+      "camera": [
+        {
+          "at": 1,
+          "to": "ledger",
+          "pad": 40
+        }
+      ],
+      "marks": [
+        {
+          "at": 3,
+          "on": "ledger",
+          "label": "accept · partial · reject — and why",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "kit",
+      "type": "motion",
+      "purpose": "benefit",
+      "bg": "light",
+      "intensity": "medium",
+      "beats": 12,
+      "say": {
+        "text": "Motion blocks, a technique library, and real examples, all included.",
+        "at": 1
+      },
+      "cues": [
+        {
+          "block": "title",
+          "at": 0,
+          "text": "Batteries included",
+          "size": 110,
+          "y": 380,
+          "enter": "rise"
+        },
+        {
+          "block": "chips",
+          "at": 2,
+          "items": [
+            "17 motion blocks",
+            "38 technique cards",
+            "3 example videos"
+          ],
+          "step": 1,
+          "y": 600
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "type": "motion",
+      "purpose": "cta",
+      "bg": "brand",
+      "beats": 8,
+      "say": {
+        "text": "Clone it. Describe it. Render it.",
+        "at": 1
+      },
+      "cues": [
+        {
+          "block": "ribbons",
+          "at": 0
+        },
+        {
+          "block": "orbs",
+          "at": 0
+        },
+        {
+          "block": "title",
+          "at": 1,
+          "text": "Clone.|Describe.|Render.",
+          "step": 1,
+          "size": 140
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "motion",
+      "purpose": "cta",
+      "bg": "light",
+      "beats": 12,
+      "cues": [
+        {
+          "block": "logo",
+          "at": 0,
+          "width": 180,
+          "y": 330,
+          "rings": false
+        },
+        {
+          "block": "title",
+          "at": 1,
+          "text": "PRAI",
+          "size": 150,
+          "enter": "pop",
+          "y": 620
+        },
+        {
+          "block": "tagline",
+          "at": 2,
+          "text": "github.com/seojaeohcode/PRAI",
+          "size": 42,
+          "y": 740
+        },
+        {
+          "block": "credits",
+          "at": 3,
+          "lines": [
+            "This video was made with PRAI from its own spec · screens: real PRAI artifacts and Remotion Studio",
+            "\"Hyperfun\" Kevin MacLeod (incompetech.com) CC BY 4.0 · Voice: Microsoft Edge neural voice via edge-tts"
+          ]
+        }
+      ]
+    }
+  ]
+}

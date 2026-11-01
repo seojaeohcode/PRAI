@@ -1,0 +1,137 @@
+{
+ "music": {
+  "file": "music/groove.mp3",
+  "bpm": 120,
+  "offset": 0,
+  "downbeat": 3,
+  "clarity": 11.42,
+  "barConfidence": 1.03,
+  "energy": [
+   0.15,
+   0.81,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94,
+   1,
+   0.85,
+   0.84,
+   0.94
+  ],
+  "duration": 65,
+  "hash": "42ca1139b4ea"
+ },
+ "voice": {
+  "intro-1": {
+   "file": "e02706e43a1f.mp3",
+   "text": "Five pull requests merged. Who writes the release notes?",
+   "seconds": 3.55,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 1.887,
+     "text": "Five pull requests merged."
+    },
+    {
+     "start": 1.887,
+     "end": 3.497,
+     "text": "Who writes the release notes?"
+    }
+   ],
+   "hash": "e02706e43a1f"
+  },
+  "pull-1": {
+   "file": "7b26a6641f73.mp3",
+   "text": "Shipnote pulls in every merged pull request from GitHub.",
+   "seconds": 3.79,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 3.725,
+     "text": "Shipnote pulls in every merged pull request from GitHub."
+    }
+   ],
+   "hash": "7b26a6641f73"
+  },
+  "add-1": {
+   "file": "f85526012ac4.mp3",
+   "text": "Add what the pull requests don't say, in plain words.",
+   "seconds": 3.22,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 3.149,
+     "text": "Add what the pull requests don't say, in plain words."
+    }
+   ],
+   "hash": "f85526012ac4"
+  },
+  "draft-1": {
+   "file": "6804854135b0.mp3",
+   "text": "One click drafts the notes. You edit, then publish.",
+   "seconds": 3.55,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 1.754,
+     "text": "One click drafts the notes."
+    },
+    {
+     "start": 1.754,
+     "end": 3.497,
+     "text": "You edit, then publish."
+    }
+   ],
+   "hash": "6804854135b0"
+  },
+  "outro-1": {
+   "file": "c1d1b7385855.mp3",
+   "text": "Merge. Click. Ship. Shipnote.",
+   "seconds": 3.1,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 0.817,
+     "text": "Merge."
+    },
+    {
+     "start": 0.817,
+     "end": 1.478,
+     "text": "Click."
+    },
+    {
+     "start": 1.478,
+     "end": 2.151,
+     "text": "Ship."
+    },
+    {
+     "start": 2.151,
+     "end": 3.028,
+     "text": "Shipnote."
+    }
+   ],
+   "hash": "c1d1b7385855"
+  }
+ }
+}

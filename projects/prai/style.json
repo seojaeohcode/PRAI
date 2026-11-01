@@ -1,0 +1,123 @@
+{
+  "signature": {
+    "name": "the spec becomes the video",
+    "from_product": "PRAI's own artifacts — the JSON spec, the beat sheet, the ledger — are the screens",
+    "scenes": [
+      "intro",
+      "spec",
+      "plan",
+      "review"
+    ]
+  },
+  "adopted": [
+    {
+      "technique": "word-cut",
+      "scenes": [
+        "intro",
+        "outro"
+      ],
+      "role": "primary",
+      "evidence": [
+        "r3@opening",
+        "catalog:word-cut"
+      ],
+      "why": "the pitch fits three-beat phrases",
+      "params": {
+        "step": 1
+      }
+    },
+    {
+      "technique": "zoom-to-detail",
+      "scenes": [
+        "spec",
+        "pipeline",
+        "plan",
+        "review"
+      ],
+      "role": "primary",
+      "evidence": [
+        "r1@whole video"
+      ],
+      "why": "code and tables are unreadable at full size"
+    },
+    {
+      "technique": "box-mark",
+      "scenes": [
+        "spec",
+        "pipeline",
+        "review"
+      ],
+      "role": "secondary",
+      "evidence": [
+        "r1@whole video"
+      ],
+      "why": "names the one line that matters"
+    },
+    {
+      "technique": "spotlight",
+      "scenes": [
+        "plan"
+      ],
+      "role": "secondary",
+      "evidence": [
+        "catalog:spotlight"
+      ],
+      "why": "a table is busy; only the rows on bar lines matter"
+    },
+    {
+      "technique": "screen-handoff",
+      "scenes": [
+        "intro"
+      ],
+      "role": "secondary",
+      "evidence": [
+        "catalog:screen-handoff"
+      ],
+      "why": "the promise turns into the real spec without a hard break"
+    },
+    {
+      "technique": "feature-chips",
+      "scenes": [
+        "kit"
+      ],
+      "role": "primary",
+      "evidence": [
+        "r3@middle"
+      ],
+      "why": "three true counts, one per beat"
+    },
+    {
+      "technique": "result-to-cta",
+      "scenes": [
+        "cta"
+      ],
+      "role": "primary",
+      "evidence": [
+        "r3@ending"
+      ],
+      "why": "ends on the repo URL, held long enough to read"
+    }
+  ],
+  "rejected": [
+    {
+      "technique": "material-to-logo",
+      "why": "true shape morphing needs custom code; the logo rings are enough for v0.1"
+    },
+    {
+      "technique": "count-up",
+      "why": "no number in this video needs weight; the chips say the counts plainly"
+    },
+    {
+      "technique": "silence-impact",
+      "why": "not built yet, and the logo reveal already sits on a bar line"
+    },
+    {
+      "technique": "outline-marquee",
+      "why": "behind word cuts it competes for the eye; the hand-off into the spec is the intro's second idea"
+    },
+    {
+      "technique": "shape-wipe",
+      "why": "a cut on the bar into the CTA scene is cleaner than a second wipe"
+    }
+  ]
+}

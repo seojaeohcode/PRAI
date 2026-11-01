@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shipnote — release notes that write themselves</title>
+<style>
+  :root { --brand:#5B3BFF; --brand2:#9C7BFF; --ink:#151A2D; --ink2:#5A6178; --line:#E4E7F0; --ground:#F6F7FB; --ok:#12A150; --warn:#E08A00; }
+  * { box-sizing: border-box; }
+  body { margin:0; font: 16px/1.5 "Segoe UI", system-ui, sans-serif; color:var(--ink); background:var(--ground); }
+  header { height:64px; display:flex; align-items:center; gap:14px; padding:0 28px; background:#fff; border-bottom:1px solid var(--line); }
+  .logo { width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#fff; display:grid; place-items:center; font-weight:800; }
+  header b { font-size:20px; } header .sp { flex:1; }
+  .btn { border:0; border-radius:10px; padding:10px 18px; font:600 15px inherit; cursor:pointer; }
+  .btn.primary { background:var(--brand); color:#fff; } .btn.ghost { background:#EEF0FA; color:var(--ink); }
+  main { display:grid; grid-template-columns: 260px 1fr 420px; height:calc(100vh - 64px); }
+  nav { background:#fff; border-right:1px solid var(--line); padding:22px 16px; }
+  nav a { display:flex; justify-content:space-between; padding:10px 14px; border-radius:10px; color:var(--ink2); text-decoration:none; font-weight:600; margin-bottom:4px; }
+  nav a.on { background:#EFEBFF; color:var(--brand); }
+  nav small { background:#fff; border:1px solid var(--line); border-radius:999px; padding:0 8px; font-size:12px; }
+  section.list { padding:28px 32px; overflow:auto; }
+  h1 { margin:0 0 4px; font-size:26px; } .muted { color:var(--ink2); }
+  .row { display:flex; gap:14px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin-top:12px; }
+  .tag { font-size:12px; font-weight:700; border-radius:999px; padding:3px 10px; }
+  .feat { background:#E8F6EE; color:var(--ok); } .fix { background:#FFF3E0; color:var(--warn); } .chore { background:#EEF0FA; color:var(--ink2); }
+  .row .t { flex:1; font-weight:600; } .row .pr { color:var(--ink2); font-family:ui-monospace,monospace; font-size:14px; }
+  aside { background:#fff; border-left:1px solid var(--line); padding:28px 26px; }
+  .card { border:1px solid var(--line); border-radius:16px; padding:20px; margin-top:16px; }
+  .summary { display:none; border:2px solid var(--brand); background:linear-gradient(180deg,#F7F4FF,#fff); }
+  .summary.on { display:block; } .summary h3 { margin:0 0 10px; color:var(--brand); }
+  .summary li { margin:6px 0; }
+  .modal { position:fixed; inset:0; background:rgba(21,26,45,.35); display:none; align-items:center; justify-content:center; }
+  .modal.on { display:flex; }
+  .sheet { width:620px; background:#fff; border-radius:18px; padding:26px; box-shadow:0 30px 80px rgba(0,0,0,.25); }
+  .sheet input, .sheet select { width:100%; font:16px inherit; padding:12px 14px; border:1px solid var(--line); border-radius:10px; margin-top:8px; }
+  .sheet .act { display:flex; justify-content:flex-end; gap:10px; margin-top:18px; }
+  .stat { display:flex; gap:12px; } .stat div { flex:1; background:var(--ground); border-radius:12px; padding:12px; } .stat b { font-size:24px; display:block; }
+</style>
+</head>
+<body>
+<header><div class="logo">S</div><b>Shipnote</b><span class="muted">acme/web · v2.4</span><span class="sp"></span>
+  <button class="btn ghost" id="new">+ New change</button><button class="btn primary" id="summarize">✨ Write release notes</button></header>
+<main>
+  <nav><a class="on" href="#">This release <small id="count">5</small></a><a href="#">Drafts <small>2</small></a><a href="#">Published <small>18</small></a><a href="#">Settings</a></nav>
+  <section class="list">
+    <h1>v2.4 — merged changes</h1><div class="muted">Pulled from GitHub · 5 pull requests since v2.3</div>
+    <div id="rows">
+      <div class="row"><span class="tag feat">feat</span><span class="t">Dark mode for the dashboard</span><span class="pr">#412</span></div>
+      <div class="row"><span class="tag feat">feat</span><span class="t">Export reports as CSV</span><span class="pr">#418</span></div>
+      <div class="row"><span class="tag fix">fix</span><span class="t">Login loop on Safari 17</span><span class="pr">#421</span></div>
+      <div class="row"><span class="tag fix">fix</span><span class="t">Chart tooltips cut off on mobile</span><span class="pr">#425</span></div>
+      <div class="row"><span class="tag chore">chore</span><span class="t">Upgrade React to 18.3</span><span class="pr">#427</span></div>
+    </div>
+  </section>
+  <aside>
+    <h2 style="margin:0">Release notes</h2><div class="muted">Readers see these on your changelog and in-app.</div>
+    <div class="card stat"><div><b id="nfeat">2</b>features</div><div><b>2</b>fixes</div><div><b>1</b>chore</div></div>
+    <div class="card summary" id="out"><h3>What's new in v2.4</h3>
+      <ul><li><b>Dark mode</b> — the dashboard now follows your system theme.</li><li><b>CSV export</b> — download any report in one click.</li>
+      <li id="li-new" style="display:none"><b>Team mentions</b> — tag a teammate in any comment.</li>
+      <li><b>Fixes</b> — Safari login loop, mobile chart tooltips.</li></ul>
+      <div class="muted" style="font-size:13px" id="foot">Drafted from 5 merged PRs · edit before publishing</div></div>
+  </aside>
+</main>
+<div class="modal" id="modal"><div class="sheet">
+  <h2 style="margin:0 0 6px">New change</h2><div class="muted">Describe it like you would to a user.</div>
+  <select id="kind"><option>feat</option><option>fix</option><option>chore</option></select>
+  <input id="title" placeholder="e.g. Mention teammates in comments">
+  <div class="act"><button class="btn ghost" id="cancel">Cancel</button><button class="btn primary" id="add">Add change</button></div>
+</div></div>
+<script>
+  const $ = (s) => document.querySelector(s);
+  $("#new").onclick = () => { $("#modal").classList.add("on"); $("#title").focus(); };
+  $("#cancel").onclick = () => $("#modal").classList.remove("on");
+  $("#add").onclick = () => {
+    const t = $("#title").value.trim() || "New change";
+    $("#rows").insertAdjacentHTML("afterbegin", `<div class="row" id="added"><span class="tag feat">feat</span><span class="t">${t}</span><span class="pr">note</span></div>`);
+    $("#count").textContent = "6"; $("#nfeat").textContent = "3"; $("#modal").classList.remove("on");
+  };
+  $("#summarize").onclick = () => {
+    $("#out").classList.add("on");
+    if (document.querySelector("#added")) { $("#li-new").style.display = ""; $("#foot").textContent = "Drafted from 5 merged PRs + 1 note · edit before publishing"; }
+  };
+</script>
+</body>
+</html>

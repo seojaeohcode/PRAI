@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schema/prai.schema.json",
+  "video": { "title": "__NAME__", "lang": "en" },
+  "theme": { "brand": "#1F3BFF", "brand2": "#6C8CFF" },
+  "music": { "src": "music/groove.mp3", "credit": "Music: PRAI procedural groove (CC0)" },
+  "voice": { "provider": "edge", "voice": "en-US-AvaNeural" },
+  "scenes": [
+    {
+      "id": "intro", "type": "motion", "purpose": "problem", "bg": "brand", "intensity": "high", "beats": 16,
+      "say": { "text": "One line about the problem your product solves.", "at": 1 },
+      "cues": [
+        { "block": "marquee", "at": 0, "text": "__NAME__ · __NAME__ · ", "until": 12 },
+        { "block": "orbs", "at": 0, "until": 12 },
+        { "block": "title", "at": 1, "text": "The problem|in three|beats.", "step": 1, "until": 8 },
+        { "block": "title", "at": 8, "text": "__NAME__", "enter": "pop", "size": 160, "until": 12 },
+        { "block": "screen", "at": 13, "shot": "home" }
+      ]
+    },
+    {
+      "id": "home", "type": "demo", "purpose": "proof", "shot": "home", "url": "your-app.com",
+      "say": "What the viewer should notice on this screen.",
+      "headline": "One short message",
+      "camera": [ { "at": 2, "to": "hero", "pad": 60 } ],
+      "marks": [ { "at": 3, "on": "cta", "label": "Look here" } ]
+    },
+    {
+      "id": "outro", "type": "motion", "purpose": "cta", "bg": "brand", "beats": 12,
+      "cues": [
+        { "block": "title", "at": 1, "text": "__NAME__", "enter": "pop", "size": 160, "y": 460 },
+        { "block": "tagline", "at": 2, "text": "your-app.com", "y": 620 },
+        { "block": "credits", "at": 4, "lines": ["Music: PRAI procedural groove (CC0)"] }
+      ]
+    }
+  ]
+}

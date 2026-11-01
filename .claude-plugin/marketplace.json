@@ -1,0 +1,8 @@
+{
+  "name": "prai",
+  "description": "PRAI skills: produce demo videos and build a reference library of motion techniques.",
+  "owner": { "name": "seojaeohcode" },
+  "plugins": [
+    { "name": "prai", "source": "./", "description": "Director skills for PRAI demo videos (production + references)." }
+  ]
+}

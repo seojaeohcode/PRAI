@@ -1,0 +1,11 @@
+{
+  "url": "http://localhost:3000",
+  "browser": "msedge",
+  "locale": "en-US",
+  "viewport": { "width": 1920, "height": 1080 },
+  "scale": 2,
+  "steps": [
+    { "goto": "/" },
+    { "shot": "home", "rects": { "hero": "h1", "cta": "button" } }
+  ]
+}

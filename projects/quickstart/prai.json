@@ -1,0 +1,274 @@
+{
+  "$schema": "../../schema/prai.schema.json",
+  "video": {
+    "title": "Shipnote — quickstart",
+    "lang": "en"
+  },
+  "theme": {
+    "brand": "#5B3BFF",
+    "brand2": "#9C7BFF",
+    "accent": "#FF5A7A",
+    "ink": "#151A2D",
+    "ink2": "#5A6178",
+    "ground": "#F6F7FB"
+  },
+  "music": {
+    "src": "music/groove.mp3",
+    "credit": "Music: PRAI procedural groove (CC0)",
+    "bed": 0.32,
+    "duck": 0.12
+  },
+  "voice": {
+    "provider": "edge",
+    "voice": "en-US-AndrewNeural",
+    "rate": "+4%"
+  },
+  "captions": {
+    "headline": true,
+    "subtitles": false
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "type": "motion",
+      "purpose": "problem",
+      "bg": "brand",
+      "intensity": "high",
+      "beats": 20,
+      "say": {
+        "text": "Five pull requests merged. Who writes the release notes?",
+        "at": 1
+      },
+      "cues": [
+        {
+          "block": "marquee",
+          "at": 0,
+          "text": "RELEASE DAY · RELEASE DAY · ",
+          "until": 12
+        },
+        {
+          "block": "orbs",
+          "at": 0,
+          "until": 12
+        },
+        {
+          "block": "kicker",
+          "at": 0,
+          "text": "v2.4 · release day",
+          "until": 6,
+          "y": 330
+        },
+        {
+          "block": "counter",
+          "at": 1,
+          "to": 5,
+          "roll": 1,
+          "suffix": " PRs merged",
+          "size": 150,
+          "until": 6,
+          "y": 520
+        },
+        {
+          "block": "title",
+          "at": 6,
+          "text": "Who|writes|the notes?",
+          "step": 1,
+          "size": 130,
+          "until": 12
+        },
+        {
+          "block": "wipe",
+          "at": 12,
+          "to": "light"
+        },
+        {
+          "block": "title",
+          "at": 12,
+          "text": "Shipnote",
+          "size": 170,
+          "enter": "pop",
+          "y": 420,
+          "until": 17
+        },
+        {
+          "block": "tagline",
+          "at": 13,
+          "text": "Release notes that write themselves",
+          "y": 600,
+          "until": 17
+        },
+        {
+          "block": "screen",
+          "at": 18,
+          "shot": "home"
+        }
+      ]
+    },
+    {
+      "id": "pull",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "home",
+      "url": "shipnote.app/acme/web/v2.4",
+      "say": "Shipnote pulls in every merged pull request from GitHub.",
+      "headline": "Every merged PR, already here",
+      "camera": [
+        {
+          "at": 2,
+          "to": "list",
+          "pad": 40
+        }
+      ],
+      "marks": [
+        {
+          "at": 3,
+          "on": "list",
+          "label": "Pulled from GitHub",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "add",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "home",
+      "url": "shipnote.app/acme/web/v2.4",
+      "say": "Add what the pull requests don't say, in plain words.",
+      "headline": "Add what the PRs don't say",
+      "camera": [
+        {
+          "at": 1,
+          "to": "home.new",
+          "pad": 220
+        },
+        {
+          "at": 4,
+          "to": "compose.sheet",
+          "pad": 60
+        }
+      ],
+      "clicks": [
+        {
+          "at": 2,
+          "on": "home.new"
+        }
+      ],
+      "swaps": [
+        {
+          "at": 3,
+          "shot": "compose"
+        }
+      ],
+      "marks": [
+        {
+          "at": 5,
+          "on": "compose.title",
+          "label": "Plain words",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "draft",
+      "type": "demo",
+      "purpose": "benefit",
+      "shot": "added",
+      "url": "shipnote.app/acme/web/v2.4",
+      "say": "One click drafts the notes. You edit, then publish.",
+      "headline": "One click. Release notes drafted.",
+      "camera": [
+        {
+          "at": 1,
+          "to": "added.summarize",
+          "pad": 240
+        },
+        {
+          "at": 4,
+          "to": "notes.notes",
+          "pad": 50
+        }
+      ],
+      "clicks": [
+        {
+          "at": 2,
+          "on": "added.summarize"
+        }
+      ],
+      "swaps": [
+        {
+          "at": 3,
+          "shot": "notes",
+          "fade": 0
+        }
+      ],
+      "marks": [
+        {
+          "at": 5,
+          "on": "notes.notes",
+          "style": "spotlight",
+          "label": "Drafted from 5 PRs + 1 note",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "type": "motion",
+      "purpose": "cta",
+      "bg": "brand",
+      "beats": 16,
+      "say": {
+        "text": "Merge. Click. Ship. Shipnote.",
+        "at": 1
+      },
+      "cues": [
+        {
+          "block": "ribbons",
+          "at": 0,
+          "until": 8
+        },
+        {
+          "block": "orbs",
+          "at": 0,
+          "until": 8
+        },
+        {
+          "block": "title",
+          "at": 1,
+          "text": "Merge.|Click.|Ship.",
+          "step": 1,
+          "size": 150,
+          "until": 8
+        },
+        {
+          "block": "wipe",
+          "at": 8,
+          "to": "light"
+        },
+        {
+          "block": "title",
+          "at": 8,
+          "text": "Shipnote",
+          "size": 170,
+          "enter": "pop",
+          "y": 430
+        },
+        {
+          "block": "tagline",
+          "at": 9,
+          "text": "made with PRAI · npm run prai -- all quickstart",
+          "size": 40,
+          "y": 600
+        },
+        {
+          "block": "credits",
+          "at": 10,
+          "lines": [
+            "Music: PRAI procedural groove (CC0) · Voice: Microsoft Edge neural voice via edge-tts · Shipnote is a fictional product"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><title>projects/excalidraw/reviews/ledger.md</title><style>
+  * { box-sizing: border-box; } body { margin: 0; height: 100vh; background: #0D1117; color: #E6EDF3; font: 22px/1.6 "Cascadia Code", "Consolas", ui-monospace, monospace; display: flex; flex-direction: column; }
+  .bar { height: 56px; background: #161B22; border-bottom: 1px solid #30363D; display: flex; align-items: center; gap: 12px; padding: 0 24px; font: 600 18px "Segoe UI", sans-serif; color: #8B949E; }
+  .bar b { color: #E6EDF3; } .tab { background: #0D1117; border: 1px solid #30363D; border-bottom: 0; padding: 14px 22px 13px; border-radius: 8px 8px 0 0; margin-top: 10px; color: #E6EDF3; }
+  main { flex: 1; overflow: hidden; padding: 28px 40px; }
+  .k { color: #79C0FF; } .s { color: #A5D6FF; } .n { color: #FFA657; } .p { color: #8B949E; } .g { color: #7EE787; } .y { color: #E3B341; } .m { color: #D2A8FF; }
+  .ln { display: inline-block; width: 46px; color: #484F58; text-align: right; margin-right: 22px; user-select: none; }
+  table { border-collapse: collapse; font: 20px/1.5 "Segoe UI", sans-serif; } th, td { border: 1px solid #30363D; padding: 8px 14px; text-align: left; } th { background: #161B22; color: #8B949E; }
+  h2 { font: 700 30px "Segoe UI", sans-serif; margin: 0 0 18px; } .row-hit td { background: #1F2D1F; }
+  main > div { width: fit-content; } table { width: auto; max-width: 1700px; }   /* boxes hug their text, so the camera can zoom to them */
+</style></head><body>
+<div class="bar"><b>PRAI</b> · projects/excalidraw/reviews/ledger.md<span style="flex:1"></span><span class="tab">ledger.md</span></div><main><div style="font:20px/1.55 Segoe UI,sans-serif"><h2>Review ledger — excalidraw</h2>
+
+Every finding gets a decision: <b>accept</b>, <b>partial</b> or <b>reject</b>, with the reason and how it was checked.
+Round cap: 4. The last round fixes everything it raised (side effects included); what is left becomes a known limit.
+
+<h3 style="font:700 24px Segoe UI,sans-serif;color:#D2A8FF">Round 1 — frames (2026-11-01)</h3>
+
+Codex: [01-frames.md](01-frames.md)
+
+
+<h3 style="font:700 24px Segoe UI,sans-serif;color:#D2A8FF">Round 2 — frames (2026-11-01)</h3>
+
+Codex: [02-frames.md](02-frames.md)
+
+</div><table id="ledger"><tr><th>#</th><th>finding</th><th>decision</th><th>why / how checked</th></tr><tr><td>1</td><td>P1: every cell of the contact sheet shows frame 0 (sheet composition is 1 frame long, <span class="s">Freeze</span> clamps to it)</td><td><b>accept</b></td><td>real engine bug, not a video problem. Sheet metadata now keeps the video's length (<span class="s">src/Video.tsx</span>); sheet regenerated and every cell shows its own beat. Frames of this video were therefore not reviewed in this round.</td></tr><tr><td>#</td><td>finding</td><td>decision</td><td>why / how checked</td></tr><tr><td>1</td><td>P2 style b2–8: styling controls too small in the wide view</td><td><b>accept</b></td><td>added a close-up key on the colour rows (beat 3) and a return to the styled diagram (beat 6); mark moved to the same box, until 6</td></tr><tr><td>2</td><td>P2 export b3–10: spotlight covers the settings, not the action row</td><td><b>accept</b></td><td>mark and a second camera key now target the PNG / SVG / clipboard row ({box:[1091,680,340,40]})</td></tr><tr><td>3</td><td>P3 intro b4–6: the sentence nearly spans the frame</td><td><b>accept</b></td><td>title size 130 → 110</td></tr></table></main></body></html>

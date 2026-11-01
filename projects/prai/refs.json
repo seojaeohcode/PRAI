@@ -1,0 +1,22 @@
+{
+ "refs": [
+  { "id": "r1", "url": "https://www.youtube.com/watch?v=5d_dLmf7MMU", "title": "[홍보영상,모션그래픽,인포그래픽] 땡쓰 APP 서비스 홍보영상 (heimate 헤이메이트)", "source": "user", "status": "viewed",
+    "note": "zooms into the feature that matters and marks it, so the UI stays readable", "observations": [
+      { "t": "whole video", "technique": "zoom-to-detail", "what": "full app screen, then a zoom onto the control being explained" },
+      { "t": "whole video", "technique": "box-mark", "what": "a coloured frame and label on the zoomed element" } ] },
+  { "id": "r2", "url": "https://www.youtube.com/watch?v=eavioeC_ge0", "title": "‘seven’ ident video 모션그래픽 motion graphics", "source": "user", "status": "viewed",
+    "note": "soft glossy shapes and physical easing", "observations": [
+      { "t": "whole video", "technique": "glossy-depth", "what": "soft glossy spheres, rings and cubes with highlights and shadows" },
+      { "t": "whole video", "technique": "shape-wipe", "what": "one shape grows and covers the frame to change scene" },
+      { "t": "end", "technique": "material-to-logo", "what": "rings interlock and become the logo" } ] },
+  { "id": "r3", "url": "https://www.youtube.com/watch?v=e6WOAiOGFA4", "title": "[모션그래픽 홍보영상] 인공지능 IT 관리 협업툴 '플래니' 홍보영상", "source": "user", "status": "viewed",
+    "note": "words cut on the beat over huge outline type", "observations": [
+      { "t": "opening", "technique": "word-cut", "what": "single words replaced on consecutive beats, a typing caret on the first" },
+      { "t": "opening", "technique": "outline-marquee", "what": "very large outlined words drifting behind the text" },
+      { "t": "middle", "technique": "feature-chips", "what": "floating glossy pills and icons naming features" },
+      { "t": "ending", "technique": "result-to-cta", "what": "flowing ribbons and soft spheres, then a white card with the logo and one line" } ] },
+  { "id": "r4", "url": "https://www.youtube.com/watch?v=bcoPG0oSqPI", "title": "MAKE IT FUNKY NOW", "source": "user", "status": "viewed",
+    "note": "not the design — the rhythm: every change lands on the beat", "observations": [
+      { "t": "whole video", "technique": "beat-landing", "what": "cuts, pops and moves arrive exactly with the beat (watched with sound)" } ] }
+ ]
+}

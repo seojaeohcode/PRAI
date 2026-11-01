@@ -1,0 +1,202 @@
+{
+ "music": {
+  "file": "music/hyperfun.mp3",
+  "bpm": 100.01,
+  "offset": 0.329,
+  "downbeat": 2,
+  "clarity": 9.16,
+  "barConfidence": 1.36,
+  "energy": [
+   0.67,
+   0.86,
+   0.82,
+   0.85,
+   0.94,
+   0.93,
+   0.88,
+   0.94,
+   0.88,
+   0.93,
+   0.82,
+   0.69,
+   0.79,
+   0.92,
+   0.81,
+   0.85,
+   0.88,
+   0.88,
+   0.85,
+   0.79,
+   0.98,
+   0.88,
+   0.79,
+   0.89,
+   0.87,
+   0.91,
+   0.86,
+   0.81,
+   0.81,
+   0.81,
+   0.81,
+   0.85,
+   0.76,
+   0.75,
+   0.7,
+   0.77,
+   0.87,
+   1,
+   0.68,
+   0.82,
+   0.84,
+   0.96,
+   0.85,
+   0.81,
+   0.76,
+   0.78,
+   0.95,
+   0.73,
+   0.74
+  ],
+  "duration": 120,
+  "hash": "a4ab49a18cf0"
+ },
+ "voice": {
+  "intro-1": {
+   "file": "cf2227217d95.mp3",
+   "text": "Your product deserves a launch video, made from one JSON file.",
+   "seconds": 3.98,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 3.94,
+     "text": "Your product deserves a launch video, made from one JSON file."
+    }
+   ],
+   "hash": "cf2227217d95"
+  },
+  "intro-2": {
+   "file": "6cc24ec575de.mp3",
+   "text": "This is PRAI.",
+   "seconds": 1.87,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 1.214,
+     "text": "This is PRAI."
+    }
+   ],
+   "hash": "6cc24ec575de"
+  },
+  "spec-1": {
+   "file": "d2edeb4972c4.mp3",
+   "text": "Describe the video in one file. Every time is a beat, so the edit follows the music.",
+   "seconds": 5.42,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 2.1189999999999998,
+     "text": "Describe the video in one file."
+    },
+    {
+     "start": 2.1189999999999998,
+     "end": 5.357,
+     "text": "Every time is a beat, so the edit follows the music."
+    }
+   ],
+   "hash": "d2edeb4972c4"
+  },
+  "pipeline-1": {
+   "file": "f72196e1377c.mp3",
+   "text": "PRAI shoots your real screens, measures the music, and records the narration.",
+   "seconds": 4.94,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 4.88,
+     "text": "PRAI shoots your real screens, measures the music, and records the narration."
+    }
+   ],
+   "hash": "f72196e1377c"
+  },
+  "plan-1": {
+   "file": "6ec5110757ba.mp3",
+   "text": "It plans every scene on the beat grid.",
+   "seconds": 2.66,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 2.607,
+     "text": "It plans every scene on the beat grid."
+    }
+   ],
+   "hash": "6ec5110757ba"
+  },
+  "studio-1": {
+   "file": "2c2407e9bc7b.mp3",
+   "text": "Preview it live, then render and master with one command.",
+   "seconds": 3.53,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 3.464,
+     "text": "Preview it live, then render and master with one command."
+    }
+   ],
+   "hash": "2c2407e9bc7b"
+  },
+  "review-1": {
+   "file": "6d703905b25f.mp3",
+   "text": "Codex reviews each round. Claude Code decides, and writes down why.",
+   "seconds": 4.66,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 2.071,
+     "text": "Codex reviews each round."
+    },
+    {
+     "start": 2.071,
+     "end": 4.607,
+     "text": "Claude Code decides, and writes down why."
+    }
+   ],
+   "hash": "6d703905b25f"
+  },
+  "kit-1": {
+   "file": "771339b47847.mp3",
+   "text": "Motion blocks, a technique library, and real examples, all included.",
+   "seconds": 4.68,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 4.63,
+     "text": "Motion blocks, a technique library, and real examples, all included."
+    }
+   ],
+   "hash": "771339b47847"
+  },
+  "outro-1": {
+   "file": "c85495806c49.mp3",
+   "text": "Clone it. Describe it. Render it.",
+   "seconds": 2.47,
+   "cues": [
+    {
+     "start": 0.05,
+     "end": 0.702,
+     "text": "Clone it."
+    },
+    {
+     "start": 0.702,
+     "end": 1.63,
+     "text": "Describe it."
+    },
+    {
+     "start": 1.63,
+     "end": 2.404,
+     "text": "Render it."
+    }
+   ],
+   "hash": "c85495806c49"
+  }
+ }
+}

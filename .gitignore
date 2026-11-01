@@ -1,0 +1,14 @@
+node_modules/
+out/
+.prai/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+# generated or licensed audio is not committed (re-made by `prai music` / `prai voice`)
+projects/*/public/voice/*
+projects/*/public/music/*
+!projects/*/public/music/.gitkeep
+# frames of other people's videos stay private (prai refs frames)
+projects/*/refs/

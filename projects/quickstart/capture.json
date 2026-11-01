@@ -1,0 +1,17 @@
+{
+  "serve": "app",
+  "browser": "msedge",
+  "viewport": { "width": 1920, "height": 1080 },
+  "scale": 2,
+  "steps": [
+    { "goto": "/" },
+    { "shot": "home", "rects": { "list": "#rows", "first": "#rows .row:first-child", "new": "#new", "summarize": "#summarize", "stats": ".stat" } },
+    { "click": "#new" },
+    { "type": ["#title", "Mention teammates in comments"], "delay": 10 },
+    { "shot": "compose", "rects": { "sheet": ".sheet", "title": "#title", "add": "#add" } },
+    { "click": "#add" },
+    { "shot": "added", "rects": { "added": "#added", "count": "#count", "stats": ".stat", "summarize": "#summarize" } },
+    { "click": "#summarize" },
+    { "shot": "notes", "rects": { "notes": "#out", "newline": "#li-new", "summarize": "#summarize" } }
+  ]
+}

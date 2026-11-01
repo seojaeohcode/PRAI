@@ -1,0 +1,322 @@
+{
+  "$schema": "../../schema/prai.schema.json",
+  "video": {
+    "title": "Excalidraw, sketched on the beat (unofficial demo)",
+    "lang": "en"
+  },
+  "theme": {
+    "brand": "#6965DB",
+    "brand2": "#9E9BF2",
+    "accent": "#FF6B6B",
+    "ink": "#1B1B1F",
+    "ink2": "#55566A",
+    "ground": "#F5F5FA"
+  },
+  "music": {
+    "src": "music/getting-it-done.mp3",
+    "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Getting%20it%20Done.mp3",
+    "credit": "\"Getting it Done\" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0",
+    "trim": 8
+  },
+  "voice": {
+    "provider": "edge",
+    "voice": "en-US-AvaNeural",
+    "rate": "+6%"
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "type": "motion",
+      "purpose": "brand",
+      "bg": "brand",
+      "intensity": "high",
+      "beats": 20,
+      "say": {
+        "text": "A whiteboard that lives in your browser.",
+        "at": 2
+      },
+      "cues": [
+        {
+          "block": "marquee",
+          "at": 0,
+          "text": "SKETCH · SHARE · SHIP · ",
+          "until": 16
+        },
+        {
+          "block": "orbs",
+          "at": 0,
+          "until": 16
+        },
+        {
+          "block": "kicker",
+          "at": 0,
+          "text": "excalidraw.com · unofficial demo",
+          "until": 8,
+          "y": 300
+        },
+        {
+          "block": "title",
+          "at": 1,
+          "text": "A whiteboard|in your|browser.",
+          "step": 1,
+          "size": 110,
+          "until": 8
+        },
+        {
+          "block": "chips",
+          "at": 8,
+          "items": [
+            "Open source",
+            "No sign-up",
+            "Hand-drawn look"
+          ],
+          "step": 1,
+          "until": 17,
+          "y": 560
+        },
+        {
+          "block": "screen",
+          "at": 17,
+          "shot": "blank"
+        }
+      ]
+    },
+    {
+      "id": "draw",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "blank",
+      "url": "excalidraw.com",
+      "say": "Press R, drag a box, and type its name.",
+      "headline": "Press R. Drag. Name it.",
+      "camera": [
+        {
+          "at": 1,
+          "to": "blank.rect",
+          "pad": 160
+        },
+        {
+          "at": 4,
+          "to": "one.A",
+          "pad": 140
+        }
+      ],
+      "clicks": [
+        {
+          "at": 2,
+          "on": "blank.rect"
+        }
+      ],
+      "marks": [
+        {
+          "at": 2,
+          "until": 4,
+          "on": "blank.rect",
+          "label": "R",
+          "tone": "brand"
+        }
+      ],
+      "swaps": [
+        {
+          "at": 4,
+          "shot": "one",
+          "fade": 0
+        }
+      ]
+    },
+    {
+      "id": "flow",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "flow",
+      "url": "excalidraw.com",
+      "say": "Add arrows, and a whole flow takes seconds.",
+      "headline": "Arrows connect the flow",
+      "camera": [
+        {
+          "at": 0,
+          "to": "flow.all",
+          "pad": 60
+        }
+      ],
+      "marks": [
+        {
+          "at": 2,
+          "on": {
+            "box": [
+              786,
+              478,
+              108,
+              44
+            ]
+          },
+          "label": "A for arrows",
+          "tone": "accent",
+          "pad": 8
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "type": "demo",
+      "purpose": "proof",
+      "shot": "flow",
+      "url": "excalidraw.com",
+      "say": "Select everything and restyle it in one go.",
+      "headline": "Restyle everything at once",
+      "swaps": [
+        {
+          "at": 2,
+          "shot": "styled",
+          "fade": 0
+        }
+      ],
+      "camera": [
+        {
+          "at": 1,
+          "to": [
+            "styled.panel",
+            "styled.all"
+          ],
+          "pad": 30
+        },
+        {
+          "at": 3,
+          "to": {
+            "box": [
+              16,
+              76,
+              195,
+              340
+            ]
+          },
+          "pad": 30
+        },
+        {
+          "at": 6,
+          "to": "styled.all",
+          "pad": 60
+        }
+      ],
+      "marks": [
+        {
+          "at": 3,
+          "until": 6,
+          "on": {
+            "box": [
+              16,
+              76,
+              195,
+              340
+            ]
+          },
+          "label": "Colours · strokes",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "export",
+      "type": "demo",
+      "purpose": "benefit",
+      "shot": "export",
+      "url": "excalidraw.com",
+      "say": "Export a PNG or an SVG, or copy it straight to the clipboard.",
+      "headline": "PNG, SVG or clipboard",
+      "camera": [
+        {
+          "at": 1,
+          "to": "export.dialog",
+          "pad": 40
+        },
+        {
+          "at": 3,
+          "to": {
+            "box": [
+              1091,
+              680,
+              340,
+              40
+            ]
+          },
+          "pad": 100
+        }
+      ],
+      "marks": [
+        {
+          "at": 3,
+          "on": {
+            "box": [
+              1091,
+              680,
+              340,
+              40
+            ]
+          },
+          "style": "spotlight",
+          "label": "One click",
+          "tone": "brand"
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "type": "motion",
+      "purpose": "cta",
+      "bg": "brand",
+      "beats": 16,
+      "say": {
+        "text": "Sketch. Share. Ship.",
+        "at": 1
+      },
+      "cues": [
+        {
+          "block": "ribbons",
+          "at": 0,
+          "until": 8
+        },
+        {
+          "block": "orbs",
+          "at": 0,
+          "until": 8
+        },
+        {
+          "block": "title",
+          "at": 1,
+          "text": "Sketch.|Share.|Ship.",
+          "step": 1,
+          "size": 150,
+          "until": 8
+        },
+        {
+          "block": "wipe",
+          "at": 8,
+          "to": "light"
+        },
+        {
+          "block": "title",
+          "at": 8,
+          "text": "excalidraw.com",
+          "size": 140,
+          "enter": "pop",
+          "y": 430
+        },
+        {
+          "block": "tagline",
+          "at": 9,
+          "text": "an unofficial demo, made with PRAI",
+          "size": 42,
+          "y": 590
+        },
+        {
+          "block": "credits",
+          "at": 10,
+          "lines": [
+            "Excalidraw is open source (MIT) · not affiliated with PRAI · screens captured from excalidraw.com",
+            "\"Getting it Done\" Kevin MacLeod (incompetech.com) CC BY 4.0 · Voice: Microsoft Edge neural voice via edge-tts"
+          ]
+        }
+      ]
+    }
+  ]
+}

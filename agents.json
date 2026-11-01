@@ -1,0 +1,67 @@
+{
+  "$comment": "Who does what when Claude Code and Codex make a video together. `prai review` reads this file. Explained in docs/roles.md.",
+  "director": {
+    "agent": "Claude Code",
+    "does": [
+      "writes the storyboard, prai.json, capture plans and code",
+      "runs every prai command",
+      "decides on each review finding (accept / partial / reject + why)",
+      "builds anything new itself (synthetic data, assets, blocks)"
+    ],
+    "never": [
+      "hands a decision back to the person that it can make itself",
+      "claims a check it did not run",
+      "kills processes it did not start"
+    ]
+  },
+  "reviewer": {
+    "agent": "Codex",
+    "sandbox": "read-only",
+    "does": [
+      "reviews: facts and exaggeration, beat sheets, frame sheets, code, reference picks",
+      "finds risks the director missed",
+      "may use web search for research (results stay 'candidate' until watched)"
+    ],
+    "never": [
+      "edits files",
+      "makes the final call"
+    ],
+    "model": "gpt-6-astra",
+    "on_model_failure": "stop and report the cause (quota, billing, plan). Do not switch to another model silently; a round run on another model is redone.",
+    "effort": {
+      "storyboard": "high",
+      "beats": "xhigh",
+      "frames": "high",
+      "refs": "high",
+      "research": "high",
+      "code": "high",
+      "final": "xhigh"
+    },
+    "effort_note": "per review kind; `final` is used automatically for the last allowed round. Design decisions and QA verdicts made outside `prai review` also use xhigh."
+  },
+  "rounds": {
+    "max": 4,
+    "plan": [
+      "storyboard (or design)",
+      "beats / references",
+      "render: frames (code too when the engine changed)",
+      "final regression (xhigh)"
+    ],
+    "last_round": "fix everything it found, side effects included, then stop. What remains goes to 'known limits' in reviews/ledger.md.",
+    "stop_early_when": "findings are mostly side effects of the previous round's fixes"
+  },
+  "long_runs": {
+    "rule": "freeze the code, give Codex the checking code and a sample of logs in one xhigh review, run once, then fix only safety defects and re-run only the affected cases"
+  },
+  "person": {
+    "does": [
+      "sets the goal and the taste (references)",
+      "watches the final video once with sound",
+      "approves publishing"
+    ],
+    "is_not_asked": [
+      "'should I do A or B?' for things the director can decide",
+      "'shall I continue?'"
+    ]
+  }
+}

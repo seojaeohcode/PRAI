@@ -1,0 +1,10 @@
+{
+  "name": "prai",
+  "version": "0.1.0",
+  "description": "PRAI (Preview AI): make beat-synced product demo and launch videos with Claude Code as director and Codex as reviewer.",
+  "author": { "name": "seojaeohcode" },
+  "homepage": "https://github.com/seojaeohcode/PRAI",
+  "repository": "https://github.com/seojaeohcode/PRAI",
+  "license": "Apache-2.0",
+  "keywords": ["video", "motion-graphics", "remotion", "demo", "codex", "product-launch"]
+}

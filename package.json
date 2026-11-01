@@ -1,0 +1,50 @@
+{
+  "name": "prai",
+  "version": "0.1.0",
+  "description": "PRAI (Preview AI) — beat-synced demo & launch videos from a JSON spec. Directed by Claude Code, reviewed by Codex, rendered with Remotion.",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prai": "tsx cli/index.ts",
+    "studio": "tsx cli/index.ts studio",
+    "schema": "tsx cli/schema.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.18",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "optionalDependencies": {
+    "ffmpeg-static": "5.2.0",
+    "playwright-core": "1.49.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seojaeohcode/PRAI.git"
+  },
+  "keywords": [
+    "video",
+    "motion-graphics",
+    "remotion",
+    "product-demo",
+    "launch-video",
+    "claude-code",
+    "codex",
+    "tts"
+  ]
+}
